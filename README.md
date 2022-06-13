@@ -33,3 +33,14 @@ for n in range(2, 10):
         # loop fell through without finding a factor
         print(n, 'is a prime number')
 ```
+
+## Iterable Unpacking (https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/)
+
+```python
+a = [1,2]
+b = 45
+print([b, a]) # [45, [1,2]]
+
+# But
+print([b, *a]) # [45, 1, 2]
+```
